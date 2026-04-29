@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://git.codelinaro.org/clo/la" name="clo-la"/>
+  <remote fetch="https://github.com/oppo-source" name="origin"/>
+  <default remote="clo-la" revision="dummy_revision" sync-c="true" sync-tags="false"/>
+  
+  <project remote="origin" name="android_kernel_common_oppo_sm8650" path="kernel_platform/common" revision="oppo/sm8650_b_16.0.0_find_x7_ultra">
+    <linkfile dest="kernel_platform/.source_date_epoch_dir" src="."/>
+  </project>
+  <project remote="origin" name="android_kernel_oppo_sm8650" path="kernel_platform/msm-kernel" revision="oppo/sm8650_b_16.0.0_find_x7_ultra">
+    <linkfile dest="kernel_platform/WORKSPACE" src="bazel.WORKSPACE"/>
+    <linkfile dest="kernel_platform/build_with_bazel.py" src="build_with_bazel.py"/>
+  </project>
+  <project remote="origin" name="android_kernel_modules_and_devicetree_oppo_sm8650" path="./" revision="oppo/sm8650_b_16.0.0_find_x7_ultra"/>
+
+  <project remote="clo-la" name="kernel/prebuilts/build-tools" path="kernel_platform/prebuilts/kernel-build-tools" revision="AU_LINUX_KERNEL.PLATFORM.3.0.R1.00.00.00.017.100">
+    <linkfile dest="kernel_platform/build/prebuilts/kernel-build-tools" src="."/>
+  </project>
+  <project remote="clo-la" name="kernel_platform/build/bazel_common_rules" path="kernel_platform/build/bazel_common_rules" revision="AU_LINUX_KERNEL.PLATFORM.3.0.R1.00.00.00.017.100"/>
+  <project remote="clo-la" name="kernel_platform/external/bazel-skylib" path="kernel_platform/external/bazel-skylib" revision="AU_LINUX_KERNEL.PLATFORM.3.0.R1.00.00.00.017.100"/>
+  <project remote="clo-la" name="kernel_platform/external/dtc" path="kernel_platform/external/dtc" revision="AU_LINUX_KERNEL.PLATFORM.3.0.R1.00.00.00.017.100"/>
+  <project remote="clo-la" name="kernel_platform/external/python/absl-py" path="kernel_platform/external/python/absl-py" revision="AU_LINUX_KERNEL.PLATFORM.3.0.R1.00.00.00.017.100"/>
+  <project remote="clo-la" name="kernel_platform/external/stardoc" path="kernel_platform/external/stardoc" revision="AU_LINUX_KERNEL.PLATFORM.3.0.R1.00.00.00.017.100"/>
+  <project remote="clo-la" name="kernel_platform/prebuilts/bazel/linux-x86_64" path="kernel_platform/prebuilts/bazel/linux-x86_64" revision="AU_LINUX_KERNEL.PLATFORM.3.0.R1.00.00.00.017.100"/>
+  <project remote="clo-la" name="kernel_platform/prebuilts/build-tools" path="kernel_platform/prebuilts/build-tools" revision="AU_LINUX_KERNEL.PLATFORM.3.0.R1.00.00.00.017.100">
+    <linkfile dest="kernel_platform/build/prebuilts/build-tools" src="."/>
+  </project>
+  <project remote="clo-la" name="kernel_platform/prebuilts/clang-tools" path="kernel_platform/prebuilts/clang-tools" revision="AU_LINUX_KERNEL.PLATFORM.3.0.R1.00.00.00.017.100">
+    <linkfile dest="kernel_platform/build/prebuilts/clang-tools" src="."/>
+  </project>
+  <project remote="clo-la" name="kernel_platform/prebuilts/jdk/jdk11" path="kernel_platform/prebuilts/jdk/jdk11" revision="AU_LINUX_KERNEL.PLATFORM.3.0.R1.00.00.00.017.100"/>
+  <project remote="clo-la" name="kernel_platform/system/tools/mkbootimg" path="kernel_platform/tools/mkbootimg" revision="AU_LINUX_KERNEL.PLATFORM.3.0.R1.00.00.00.017.100"/>
+  <project remote="clo-la" name="kernel_platform/toolchain/prebuilts/ndk/r23" path="kernel_platform/prebuilts/ndk-r23" revision="AU_LINUX_KERNEL.PLATFORM.3.0.R1.00.00.00.017.100"/>
+  <project remote="clo-la" name="kernelplatform/prebuilts-master/clang/host/linux-x86" path="kernel_platform/prebuilts/clang/host/linux-x86" revision="AU_LINUX_KERNEL.PLATFORM.3.0.R1.00.00.00.017.100"/>
+  <project remote="clo-la" name="kernelplatform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" path="kernel_platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" revision="AU_LINUX_KERNEL.PLATFORM.3.0.R1.00.00.00.017.100">
+    <linkfile dest="kernel_platform/build/build-tools/sysroot" src="sysroot"/>
+  </project>
+</manifest>
